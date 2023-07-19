@@ -8,9 +8,17 @@
 body {
   min-height: 100vh;
   background: rgb(255, 255, 255);
-  background-image: url('/images/bg-tablet-pattern.svg');
+  background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
-  background-position: 120% -150%;
+  background-position: 125% -35%, -80% 90%;
+}
+
+#root {
+  overflow: hidden;
+}
+
+p {
+  color: hsl(227, 12%, 61%);
 }
 
 .get-started-btn {
@@ -21,4 +29,160 @@ body {
   border: none;
   background-color: hsl(12, 88%, 59%);
   box-shadow: 0 5px 10px 0 hsla(12, 88%, 59%, 0.3);
+}
+
+.header-section {
+  padding-inline: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10vw;
+  padding-block: 5vh;
+}
+
+.header-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5vh;
+}
+
+.header-title {
+  color: hsl(228, 39%, 23%);
+  font-size: 3rem;
+}
+
+.header-text {
+  width: 80%;
+  line-height: 2em;
+}
+
+.whats-diff-section {
+  padding-inline: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10vw;
+  padding-block: 5vh;
+}
+
+.whats-diff-description {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.whats-diff-title {
+  font-size: 2.2rem;
+  color: hsl(228, 39%, 23%);
+}
+
+.whats-diff-text {
+  line-height: 1.5em;
+  width: 80%;
+}
+
+
+.whats-diff-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.whats-diff-item {
+  display: grid;
+  column-gap: 2vw;
+  row-gap: 2vh;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+.item-number {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+}
+
+.item-title {
+  font-weight: 700;
+  color: hsl(228, 39%, 23%);
+}
+
+.item-text {
+  grid-column: 2;
+  padding-right: 70px;
+  line-height: 1.5em;
+  color: hsl(227, 12%, 61%);
+}
+
+.testimmonials-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+  padding-block: 5vh;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  margin-block: 5vh;
+}
+
+
+.swiper {
+  width: 100vw;
+}
+
+.swiper-slide {
+  padding: 20px;
+  text-align: center;
+  background-color:  hsl(0, 0%, 98%);
+}
+
+.testimmonials-item {
+  overflow: visible;
+  padding: 20px;
+  width: 60vw;
+  
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  position: relative;
+  z-index: 2;
+}
+
+.avatar {
+  position: relative;
+  top: 0;
+  transform: translateY(-50%);
+  width: 20%;
+}
+
+.name {
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  margin-bottom: 1vh;
+}
+
+.simplify-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
+  padding-inline: 10vw;
+  background: url('/images/bg-simplify-section-desktop.svg'), hsl(12, 88%, 59%);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 150% 50%, center center;
+}
+
+.simplify-title {
+  font-size: 2.3rem;
+  width: 40%;
+  color: white;
 }
