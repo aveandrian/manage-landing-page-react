@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  background-image: url('/images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: 120% -150%;
+}
+
+.get-started-btn {
+  padding: 10px 30px;  
+  border-radius: 20px; 
+  font-weight: 700;
+  color: white;
+  border: none;
+  background-color: hsl(12, 88%, 59%);
+  box-shadow: 0 5px 10px 0 hsla(12, 88%, 59%, 0.3);
+}
