@@ -10,7 +10,7 @@ body {
   background: rgb(255, 255, 255);
   background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
-  background-position: 125% -35%, -80% 90%;
+  background-position: 125% -15%, -70% 65%;
 }
 
 #root {
@@ -336,6 +336,12 @@ footer {
 
 
 @media screen and (max-width: 60rem) {
+  body {
+    background-image: url('/images/bg-tablet-pattern.svg'), url('/images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 15vw -9vh, 65vw 68vh;
+  }
   .header-section {
     padding-inline: 5vw;
     display: grid;
