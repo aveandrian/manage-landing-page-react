@@ -19,17 +19,21 @@ nav {
     font-weight: 500;
 }
 
+.nav-items a:hover {
+    cursor: pointer;
+    color: hsl(227, 12%, 61%);
+}
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 60rem) {
     nav {
-        padding: 5vh 5vw;
+        padding: 1vh 5vw;
     }
 
     .menu-btn {
         display: block;
     }
 
-    .get-started-btn {
+    nav .get-started-btn {
         display: none;
     }
 
@@ -38,7 +42,7 @@ nav {
         top: 10vh;
         flex-direction: column;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 0.313rem;
         width: 90vw;
         padding-block: 5vh;
         gap: 3vh;

@@ -11,7 +11,7 @@ export default function Navbar(){
     return (
         <nav>
             <div className={`nav-items-bg ${isOpened ? "opened" : ""}`} onClick={toggleIsOpened}></div>
-            <img className='logo' src='/images/logo.svg' />
+            <img className='logo' src='/images/logo.svg' alt='Logo' />
             <div className={`nav-items ${isOpened ? "opened" : ""}`}>
                 <a>Pricing</a>
                 <a>Product</a>
@@ -19,7 +19,7 @@ export default function Navbar(){
                 <a>Careers</a>
                 <a>Community</a>
             </div>
-            <img className='menu-btn' src={`/images/icon-${isOpened ? "close" : "hamburger"}.svg`} onClick={toggleIsOpened} />
+            <img className='menu-btn' src={`/images/icon-${isOpened ? "close" : "hamburger"}.svg`} onClick={toggleIsOpened} alt='Menu button'/>
             <button className='get-started-btn'>Get Started</button>
         </nav>
     )
